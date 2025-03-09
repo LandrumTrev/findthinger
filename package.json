@@ -1,0 +1,20 @@
+{
+  "name": "findthinger",
+  "version": "1.0.0",
+  "description": "A vanilla JS app to find road trip destinations",
+  "main": "js/main.js",
+  "scripts": {
+    "start": "live-server --port=8080",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "roadtrip",
+    "finder",
+    "vanilla-js"
+  ],
+  "author": "Richard L Trevillian III",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}
