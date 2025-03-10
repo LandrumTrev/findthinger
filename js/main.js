@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
    const app = document.getElementById('app');
-   app.innerHTML = '<h1>Well hello world! Bienvenudo to Findthinger!</h1>';
+   app.innerHTML = '<h1>Well howdy world! Bienvenudo to Findthinger!</h1>';
    console.log('Findthinger initialized');
 });
 
