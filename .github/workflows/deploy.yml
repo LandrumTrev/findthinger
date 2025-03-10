@@ -13,6 +13,7 @@ jobs:
           host: ${{ secrets.SG_HOST }}
           username: ${{ secrets.SG_USERNAME }}
           key: ${{ secrets.SG_SSH_KEY }}
+          passphrase: ${{ secrets.SG_PASSPHRASE }}
           port: ${{ secrets.SG_PORT }}
           script: |
             cd www/findthinger.lantrev.com/public_html
