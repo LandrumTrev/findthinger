@@ -2,5 +2,3 @@
 node_modules/
 *.log
 dist/
-css/main.css  
-# Exclude compiled CSS (we’ll generate it later)
