@@ -5,6 +5,8 @@
   "main": "js/main.js",
   "scripts": {
     "start": "live-server --port=8080",
+    "lint": "eslint js/**/*.js",
+    "format": "prettier --write js/**/*.js scss/**/*.scss *.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -15,6 +17,11 @@
   "author": "Richard L Trevillian III",
   "license": "MIT",
   "devDependencies": {
-    "live-server": "^1.2.0"
+    "@eslint/js": "^9.22.0",
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.1",
+    "globals": "^16.0.0",
+    "live-server": "^1.2.0",
+    "prettier": "^3.5.3"
   }
 }
