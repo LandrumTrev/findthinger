@@ -5,7 +5,8 @@
   "main": "js/main.js",
   "scripts": {
     "start": "npm run build:css && live-server --port=8080",
-    "dev": "npm run watch:css & live-server --port=8080",
+    "dev": "npm run watch:css & live-server --port=8080 --wait=500",
+    "alt-dev": "npm run watch:css & http-server -p 8080",
     "lint": "eslint js/**/*.js",
     "format": "prettier --write js/**/*.js scss/**/*.scss *.html",
     "build:css": "sass scss/main.scss css/main.css",
@@ -24,6 +25,7 @@
     "eslint": "^9.22.0",
     "eslint-config-prettier": "^10.1.1",
     "globals": "^16.0.0",
+    "http-server": "^14.1.1",
     "live-server": "^1.2.0",
     "prettier": "^3.5.3",
     "sass": "^1.85.1"
