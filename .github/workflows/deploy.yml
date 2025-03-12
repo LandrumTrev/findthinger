@@ -27,5 +27,9 @@ jobs:
             cd www/findthinger.lantrev.com/public_html
             git fetch origin main
             git reset --hard origin/main
-            cd /home/runner/work/findthinger/findthinger
-            cp index.html css/main.css css/main.min.css js/main.js js/main.min.js www/findthinger.lantrev.com/public_html
+            echo "Copying built files..."
+            cp /home/runner/work/findthinger/findthinger/index.html .
+            cp /home/runner/work/findthinger/findthinger/css/main.css .
+            cp /home/runner/work/findthinger/findthinger/css/main.min.css .
+            cp /home/runner/work/findthinger/findthinger/js/main.js .
+            cp /home/runner/work/findthinger/findthinger/js/main.min.js .
