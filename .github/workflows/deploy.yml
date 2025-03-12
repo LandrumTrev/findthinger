@@ -15,6 +15,7 @@ jobs:
           key: ${{ secrets.SG_SSH_KEY }}
           passphrase: ${{ secrets.SG_PASSPHRASE }}
           port: ${{ secrets.SG_PORT }}
-          source: "index.html,css/main.css,css/main.min.css,js/main.js,js/main.min.js"
-          target: "www/findthinger.lantrev.com/public_html"
-          overwrite: true
+          script: |
+            cd www/findthinger.lantrev.com/public_html
+            git pull origin main
+            echo "Deployed successfully"
