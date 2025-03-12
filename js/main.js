@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const app = document.getElementById("app");
-  app.innerHTML = "<h1>Vorpal Bunnies.<br><small>Snickersnack.</small></h1>";
+  app.innerHTML = "<h1>Knick Knack.<br><small>Paddywack.</small></h1>";
   console.log("Findthinger initialized");
 });
 

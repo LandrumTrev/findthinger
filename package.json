@@ -11,6 +11,9 @@
     "format": "prettier --write js/**/*.js scss/**/*.scss *.html",
     "build:css": "sass scss/main.scss css/main.css",
     "watch:css": "sass --watch scss/main.scss:css/main.css",
+    "minify:js": "terser js/main.js -o js/main.min.js",
+    "minify:css": "postcss css/main.css --use cssnano -o css/main.min.css",
+    "build": "npm run build:css && npm run minify:js && npm run minify:css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -22,12 +25,16 @@
   "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^9.22.0",
+    "cssnano": "^7.0.6",
     "eslint": "^9.22.0",
     "eslint-config-prettier": "^10.1.1",
     "globals": "^16.0.0",
     "http-server": "^14.1.1",
     "live-server": "^1.2.0",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.0",
     "prettier": "^3.5.3",
-    "sass": "^1.85.1"
+    "sass": "^1.85.1",
+    "terser": "^5.39.0"
   }
 }
