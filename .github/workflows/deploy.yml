@@ -23,13 +23,10 @@ jobs:
           key: ${{ secrets.SG_SSH_KEY }}
           passphrase: ${{ secrets.SG_PASSPHRASE }}
           port: ${{ secrets.SG_PORT }}
+          source: "index.html,css/main.css,css/main.min.css,js/main.js,js/main.min.js"
+          target: "www/findthinger.lantrev.com/public_html"
           script: |
             cd www/findthinger.lantrev.com/public_html
             git fetch origin main
             git reset --hard origin/main
-            echo "Copying built files..."
-            cp /home/runner/work/findthinger/findthinger/index.html .
-            cp /home/runner/work/findthinger/findthinger/css/main.css .
-            cp /home/runner/work/findthinger/findthinger/css/main.min.css .
-            cp /home/runner/work/findthinger/findthinger/js/main.js .
-            cp /home/runner/work/findthinger/findthinger/js/main.min.js .
+            echo "Files deployed successfully"
