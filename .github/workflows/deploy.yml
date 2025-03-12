@@ -25,4 +25,7 @@ jobs:
           port: ${{ secrets.SG_PORT }}
           script: |
             cd www/findthinger.lantrev.com/public_html
-            git pull origin main
+            git fetch origin main
+            git reset --hard origin/main
+            cd /home/runner/work/findthinger/findthinger
+            cp index.html css/main.css css/main.min.css js/main.js js/main.min.js www/findthinger.lantrev.com/public_html
