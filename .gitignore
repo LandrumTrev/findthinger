@@ -4,3 +4,4 @@ dist/
 .DS_Store
 css/main.min.css
 js/main.min.js
+.github/workflows/dnu-deploy.yml
