@@ -21,4 +21,12 @@ nav a:hover {
   text-decoration: underline;
 }
 
+h1 {
+  color: tomato;
+}
+
+p {
+  color: lightseagreen;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,6 @@
 // Define route handlers
 const routes = {
-  '/': () => '<h1>Welcome to Findthinger</h1><p>Plan your next road trip!</p>',
+  '/': () => '<h1>Whassupdawg to Findthinger</h1><p>Yabba dabba do!</p>',
   '/search': () => '<h1>Search</h1><p>Find destinations here (coming soon).</p>',
   '/about': () => '<h1>About</h1><p>A vanilla JS road trip planner.</p>',
   '404': () => '<h1>404 - Not Found</h1><p>Oops, wrong turn!</p>'

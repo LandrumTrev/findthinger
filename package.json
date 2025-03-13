@@ -4,24 +4,19 @@
   "description": "A vanilla JS app to find road trip destinations",
   "main": "js/main.js",
   "scripts": {
-    "start": "npm run build:css && live-server --port=8080",
-    "dev": "npm run watch:css & live-server --port=8080 --wait=500",
-    "alt-dev": "npm run watch:css & http-server -p 8080",
+    "start": "npm run build && live-server --port=8080",
+    "dev": "node watch.js & live-server --port=8080 --wait=500",
+    "alt-dev": "node watch.js & http-server -p 8080",
     "lint": "eslint js/**/*.js",
     "format": "prettier --write js/**/*.js scss/**/*.scss *.html",
-    "build:css": "sass scss/main.scss css/main.css",
-    "watch:css": "sass --watch scss/main.scss:css/main.css",
-    "minify:js": "terser js/main.js -o js/main.min.js",
-    "minify:css": "postcss css/main.css --use cssnano -o css/main.min.css",
-    "build": "npm run build:css && npm run minify:js && npm run minify:css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "sass scss/main.scss css/main.css && terser js/main.js -o js/main.min.js && postcss css/main.css --use cssnano -o css/main.min.css"
   },
   "keywords": [
     "roadtrip",
     "finder",
     "vanilla-js"
   ],
-  "author": "Richard L Trevillian III",
+  "author": "Rich Trevillian",
   "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^9.22.0",
